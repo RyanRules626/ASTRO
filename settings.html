@@ -1,0 +1,202 @@
+<!-- Favicon and title -->
+  <title>ASTRO - Settings </title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+
+<!-- CSS and special fonts go here --> 
+  <link rel="stylesheet" href="/assets/main-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+<style>
+    .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+border-radius: 20%
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+    
+    
+</style>
+
+
+<!-- Actual code goes here -->
+
+<!-- Pop up -->
+<!DOCTYPE html>
+
+<!-- Nav bar -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="/index.html">
+                <img src="favicon.png" alt="Site Logo" width="10%" height="10%">
+            </a>
+            <a href="/index.html">ASTRO</a>
+                        <div class=navbar-verify>
+            <a href="/official.html">
+                <img src="/1verified.png" alt="Site Logo" width="5px" height="5px">
+            </a>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <a href="/home">
+               <i class="fa fa-home fa-lg"></i>
+            </a>
+            <a href="/experiences">
+                <i class="fa fa-laptop fa-lg"></i>
+            </a>
+            <a href="/forms">
+                <i class="fa fa-envelope fa-lg"></i>
+            </a>
+            <a href="/server">
+             <i class="fa fa-bullhorn fa-lg"></i>
+            </a>
+            <a href="/reviews">
+                <i class="fa fa-star fa-lg"></i>
+            </a>
+            <a href="/share">
+                <i class="fa fa-share-square fa-lg"></i>
+            </a>
+       <a href="/settings">
+             <i class="fa fa-gear fa-lg"></i>
+            </a>
+        </div>
+    </div>
+<!-- CODE -->
+
+<html>
+<br>
+<br>
+<script src=/assets/fullscreen.js></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<center>
+<h1 style=font-size:50px>SETTINGS</h1>
+<hr style="border:5px solid white">
+
+
+<h1 style=font-size:30px> ASTROCloak ​ <i class="fa fa-star"></i></h1> 
+<p> ASTROCloak only works on content viewers. Not main pages. </p>
+
+<select name="cloak" data-cloak-select>
+  <option value="astro">ASTRO (uncloaked)</option>
+  <option value="xmas">Christmas Cloak! (LIMITED TIME ONLY) </option>
+  <option value="canvas">Canvas</option>
+  <option value="google">Google</option>
+  <option value="classroom">Google Classroom</option>
+  <option value="clever">Clever</option>
+  <option value="desmos">Desmos</option>
+  <option value="deltamath">Delta Math</option>
+  <option value="calculator">Calculator - Google Search</option>
+</select>
+
+
+
+<script>
+  const cloaks = [
+    { name: "astro", icon: "/favicon.png", title: "ASTRO - The ultimate unblocked website" },
+    { name: "xmas", icon: "/uploads/images/santa-logo.jpg", title: "Santa Tracker 2000" },
+    { name: "canvas", icon: "https://alpine.instructure.com/favicon.ico", title: "Canvas" },
+    { name: "google", icon: "https://google.com/favicon.ico", title: "Google" },
+    { name: "classroom", icon: "/uploads/images/classes1-logo.jpg", title: "Classes" },
+    { name: "clever", icon: "https://clever.com/favicon.ico", title: "Clever" },
+    { name: "desmos", icon: "/uploads/images/desmos-logo.jpg", title: "Desmos" },
+    { name: "deltamath", icon: "https://deltamath.com/favicon.ico", title: "DeltaMath" },
+    { name: "calculator", icon: "https://google.com/favicon.ico", title: "calculator - Google Search" },
+  ];
+</script>
+
+<hr>
+
+<h1 style=font-size:30px>Anti-Blocksi Mode</h1>
+<p> Show a dialog when a teacher trys to close your tab. Click cancel to stop them.  </p>
+
+<h3> [ALWAYS ON] </h3>
+
+<!--<label  class="toggle-switch">
+    <input type="checkbox">
+    <span class="slider"></span>
+</label>-->
+
+<!--<script>
+const toggleSwitch = document.querySelector('.toggle-switch input');
+
+toggleSwitch.addEventListener('change', function() {
+  if (this.checked) {
+    alert('Toggle Switch is ON');
+    // Add your 'on' logic here
+  } else {
+    alert('Toggle Switch is OFF');
+    // Add your 'off' logic here
+  }
+});-->
+</script>
+
+<hr>
+
+<h1 style=font-size:30px>Panic Key</h1>
+<p> Go to CANVAS when a key is held down. The ability to change it is coming soon! </p>
+
+<h3> [SET TO - ] </h3>
+
+<hr>
+
+<h1 style=font-size:30px>Fullscreen</h1>
+<p> Enjoy games in fullscreen, with no interuptions. Just click the <i class="fa fa-arrows"></i> button to get started. </p>
+<h3> [ALWAYS ON] </h3>
+
+<hr>
+
+<h1 style=font-size:30px>Panic Button</h1>
+<p> Click <i class="fa fa-warning"></i> to make your page change to CANVAS Login.  </p>
+
+
+
+<h3> [ALWAYS ON] </h3>
+</center>
+
+
+
+
+
+
+</html>
